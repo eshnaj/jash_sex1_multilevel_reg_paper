@@ -16,9 +16,9 @@ LE_genes <- read.table("Gene Sets/LE_EGs.txt", header = TRUE)
 L1_genes <- read.table("Gene Sets/L1_EGs.txt", header = TRUE)
 L2_genes <- read.table("Gene Sets/L2_EGs.txt", header = TRUE)
 L3_genes <- read.table("Gene Sets/L3_EGs.txt", header = TRUE)
-L4_genes <- read.table("Eshna/Gene Sets/L4_EGs.txt", header = TRUE)
+L4_genes <- read.table("Gene Sets/L4_EGs.txt", header = TRUE)
 YA_gonad <- read.table("Gene Sets/YA-gonad_EGs.txt", header = TRUE)
-YA_genes <- read.table("/Gene Sets/YA_EGs.txt", header = TRUE)
+YA_genes <- read.table("Gene Sets/YA_EGs.txt", header = TRUE)
 
 common_embryo_genes <- EE_genes$gene_id[EE_genes$gene_id %in% LE_genes$gene_id] 
 #5243
