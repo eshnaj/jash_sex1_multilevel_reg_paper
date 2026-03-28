@@ -339,8 +339,6 @@ dpy21_X <- subset(dpy21,
                     chromosome_name == "X")
 dpy21_sensitive <- dpy21_X$EnsemblID
 
-#xol1sex1_xol1_L3 <- read.table("/Volumes/lsa-gyorgyi/Eshna/Eshna_xol1sex1_L3/Eshna_analysis/results/xol1sex1_xol1_annotated.csv")
-
 X_derep_xs_x_dpy21 <- define_X_sensitive(xol1sex1_xol1_L3, dpy21_sensitive)
 
 X_derep_xs_x_dpy21_plot <- make_X_sensitive_plot(X_derep_xs_x_dpy21, 
@@ -392,8 +390,6 @@ median(X_derep_xs_x_dpy21$log2FoldChange[X_derep_xs_x_dpy21$derep == "X_sensitiv
 
 
 ### xol-1 / WT ####
-
-#xol1_N2_L3 <- read.table("/Volumes/lsa-gyorgyi/Eshna/Eshna_xol1sex1_L3/Eshna_analysis/results/xol1_N2_annotated.csv")
 
 X_derep_x_wt_dpy21 <- define_X_sensitive(xol1_N2_L3, dpy21_sensitive)
 
