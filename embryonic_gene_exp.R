@@ -1,3 +1,11 @@
+library('biomaRt')
+library('ggplot2')
+library('tidyr')
+library('dplyr')
+library('data.table')
+library('DESeq2')
+library('ggpubr')
+library('readxl')
 
 xol1sex1_N2_ee_genes <- read.table("salmon_analysis/xol1_sex1/xol1sex1_N2_ee_genes.csv")
 xol1sex1_xol1_ee_genes <- read.table("salmon_analysis/xol1_sex1/xol1sex1_xol1_ee_genes.csv")
