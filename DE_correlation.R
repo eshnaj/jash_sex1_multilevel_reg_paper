@@ -233,7 +233,7 @@ LE_EE_0.1FC <- EE_genes %>%
   filter(abs(log2FC) > 0.1)
 
 ## Load datasets
-ee <- readRDS("/Users/eshna/Desktop/Work/Csankovszki Lab/2026/early_emb/DE_run.rds")
+ee <- readRDS("DE_run.rds")
 xol1sex1_xol1 <- results(ee, contrast=c("condition","xol1sex1","xol1"))
 xol1sex1_xol1 <- data.frame(xol1sex1_xol1)
 
@@ -445,7 +445,7 @@ venn_4 <- list(xol1_WT = row.names(venn2_1),
                xol1sex1_xol1 = row.names(venn2_3))
 
 venn.diagram(venn_4, 
-             "/Users/eshna/Desktop/Work/Csankovszki Lab/2026/Fig3B.png",
+             "sex-1 paper/Data/2026/Fig3B.png",
              scaled = 3, compression = "lzw",
              fill = c("#b2d8d8", "#006666"),
              category.names = "",
